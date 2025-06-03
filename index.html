@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      h1, h2, h3 {
+        font-weight: 600;
+      }
+      p {
+        font-weight: 400;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="flex justify-between items-center p-4 container border-b-1 border-gray-300">
+        <a href=""><img src="img/Logo Onz.jpg" alt="Logo" class="w-18 bg-white"></a>
+        <nav class="flex max-sm:hidden">
+            <ul class="flex gap-4">
+                <li><a href="">Home</a></li>
+                <li><a href="">Projetos</a></li>
+                <li><a href="">Quem Somos</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+        </nav>
+        <nav class="md:hidden cursor-pointer">
+           <div class="flex flex-col gap-1 justify-end *:rounded-md">
+            <span class="w-6 h-1 bg-black"></span>
+            <span class="w-6 h-1 bg-black"></span>
+            <span class="w-6 h-1 bg-black"></span>
+           </div>
+        </nav>
+    </header>
+
+    <main class="w-full h-screen relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full">
+            <img src="img/Logo Onz.jpg" alt="Background" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute top-0 left-0 w-full h-full bg-black/60"></div>
+        <div class="relative z-10 flex justify-center flex-col items-center h-full">
+            <h1 class="text-4xl text-center mt-12 md:text-7xl leading-12 md:leading-24 text-white font-bold">Soluçãos Inteligentes em <br>Projetos Mecânicos</h1>
+            <button class="bg-white mt-12 text-black p-4 w-auto mx-auto border border-transparent hover:text-white hover:bg-black hover:border-white transition-colors duration-300 cursor-pointer">Faça seu Orçamento</button>
+        </div>
+    </main>
+
+    <section class="bg-black" id="quem-somos">
+            <div class="flex justify-center flex-col text-white m-12">
+                <h1 class="text-4xl text-center mt-12 md:text-4xl leading-12 md:leading-18">Quem Somos</h1>
+                <p class="text-center italic mb-12">Somos uma empresa especializada em projetos mecânicos com base em modelação 3D, desenvolvendo equipamentos sob medida para atender ás necessidades especificas de industrias dos mais diversos segmentos. Com foco na inovação, precisão técnica e personalização, entregamos soluçãos que resolvem problemas reais dentro da operação dos nossos clientes.</p>
+            </div>
+              <div class="bg-white rounded-md p-8  mx-auto grid grid-cols-3 gap-8 mt-12 max-sm:grid-cols-1">
+                <div class="text-center">
+                  <img src="img/objetivo.png" alt="Ícone Missão" class="w-40 mx-auto mb-4">
+                  <h3 class="text-2xl font-bold mb-4">Missão</h3>
+                  <p class="text-gray-700">Desenvolver soluções mecânicas inovadoras e personalizadas que otimizem processos industriais, contribuindo para o sucesso e crescimento dos nossos clientes.</p>
+                </div>
+
+                <div class="text-center">
+                  <img src="img/visao-compartilhada.png" alt="Ícone Visão" class="w-40 mx-auto mb-4">
+                  <h3 class="text-2xl font-bold mb-4">Visão</h3>
+                  <p class="text-gray-700">Ser referência nacional em projetos mecânicos, reconhecida pela inovação e qualidade em soluções industriais.</p>
+                </div>
+
+                <div class="text-center">
+                  <img src="img/valor.png" alt="Ícone Valores" class="w-40 mx-auto mb-4">
+                  <h3 class="text-2xl font-bold mb-4">Valores</h3>
+                  <div class="text-gray-700">
+                    <p class="mb-2">• Excelência Técnica</p>
+                    <p class="mb-2">• Inovação</p>
+                    <p class="mb-2">• Compromisso</p>
+                    <p class="mb-2">• Ética</p>
+                    <p class="mb-2">• Qualidade</p>
+                  </div>
+                </div>
+              </div>
+    </section>     
+  </body>
+</html>
