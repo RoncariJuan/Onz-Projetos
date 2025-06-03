@@ -173,6 +173,215 @@
             </div>
         </div>
     </section>
-    
+
+    <section class="bg-white py-20" id="projetos">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl text-center mb-4 md:text-5xl font-bold text-black">Nossos Projetos</h1>
+            <p class="text-center text-gray-600 mb-16 max-w-2xl mx-auto">Conheça alguns dos nossos principais projetos e soluções desenvolvidas para nossos clientes</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Projeto 1 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer" onclick="openModal('modal1')">
+                    <div class="aspect-w-16 aspect-h-9">
+                        <img src="img/projeto 1.jpg" alt="Projeto 1" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Sistema de Transporte Industrial</h3>
+                            <p class="text-sm mb-4">Desenvolvimento de sistema automatizado para transporte de materiais em linha de produção</p>
+                            <div class="flex gap-2">
+                                <span class="px-3 py-1 bg-blue-500/80 rounded-full text-xs">Automação</span>
+                                <span class="px-3 py-1 bg-green-500/80 rounded-full text-xs">Indústria Alimentícia</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 2 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer" onclick="openModal('modal2')">
+                    <div class="aspect-w-16 aspect-h-9">
+                        <img src="img/projeto 2.jpg" alt="Projeto 2" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Equipamento de Dosagem</h3>
+                            <p class="text-sm mb-4">Máquina de dosagem precisa para produtos químicos com controle automatizado</p>
+                            <div class="flex gap-2">
+                                <span class="px-3 py-1 bg-purple-500/80 rounded-full text-xs">Química</span>
+                                <span class="px-3 py-1 bg-yellow-500/80 rounded-full text-xs">Precisão</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 3 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer" onclick="openModal('modal3')">
+                    <div class="aspect-w-16 aspect-h-9">
+                        <img src="img/projeto 3.jpg" alt="Projeto 3" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Sistema de Embalagem</h3>
+                            <p class="text-sm mb-4">Linha automatizada de embalagem com integração de robótica industrial</p>
+                            <div class="flex gap-2">
+                                <span class="px-3 py-1 bg-red-500/80 rounded-full text-xs">Robótica</span>
+                                <span class="px-3 py-1 bg-blue-500/80 rounded-full text-xs">Automação</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 4 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer" onclick="openModal('modal4')">
+                    <div class="aspect-w-16 aspect-h-9">
+                        <img src="img/projeto4.jpg" alt="Projeto 4" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Máquina de Corte CNC</h3>
+                            <p class="text-sm mb-4">Sistema CNC personalizado para corte preciso de metais</p>
+                            <div class="flex gap-2">
+                                <span class="px-3 py-1 bg-gray-500/80 rounded-full text-xs">CNC</span>
+                                <span class="px-3 py-1 bg-orange-500/80 rounded-full text-xs">Metalurgia</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#contato" class="inline-block bg-black text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition-colors duration-300">
+                    Solicite um Orçamento
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modais -->
+    <!-- Modal 1 -->
+    <div id="modal1" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
+        <div class="bg-white rounded-lg max-w-4xl w-full mx-4 max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-start mb-4">
+                    <h2 class="text-2xl font-bold">Sistema de Transporte Industrial</h2>
+                    <button onclick="closeModal('modal1')" class="text-gray-500 hover:text-gray-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <img src="img/projeto 1.jpg" alt="Projeto 1" class="w-full h-64 object-cover rounded-lg mb-6">
+                <div class="space-y-4">
+                    <p class="text-gray-600">Desenvolvemos um sistema automatizado de transporte industrial para uma grande empresa do setor alimentício. O projeto incluiu:</p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Design e implementação de esteiras transportadoras automatizadas</li>
+                        <li>Sistema de controle e monitoramento em tempo real</li>
+                        <li>Integração com sistemas existentes da empresa</li>
+                        <li>Implementação de sensores de segurança</li>
+                    </ul>
+                    <div class="flex gap-2 mt-4">
+                        <span class="px-3 py-1 bg-blue-500/80 rounded-full text-xs text-white">Automação</span>
+                        <span class="px-3 py-1 bg-green-500/80 rounded-full text-xs text-white">Indústria Alimentícia</span>
+                        <span class="px-3 py-1 bg-purple-500/80 rounded-full text-xs text-white">Sistema Integrado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="modal2" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
+        <div class="bg-white rounded-lg max-w-4xl w-full mx-4 max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-start mb-4">
+                    <h2 class="text-2xl font-bold">Equipamento de Dosagem</h2>
+                    <button onclick="closeModal('modal2')" class="text-gray-500 hover:text-gray-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <img src="img/projeto 2.jpg" alt="Projeto 2" class="w-full h-64 object-cover rounded-lg mb-6">
+                <div class="space-y-4">
+                    <p class="text-gray-600">Desenvolvimento de um sistema de dosagem precisa para produtos químicos, incluindo:</p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Controle preciso de vazão e dosagem</li>
+                        <li>Sistema de monitoramento e registro de dados</li>
+                        <li>Interface intuitiva para operadores</li>
+                        <li>Sistema de segurança para produtos químicos</li>
+                    </ul>
+                    <div class="flex gap-2 mt-4">
+                        <span class="px-3 py-1 bg-purple-500/80 rounded-full text-xs text-white">Química</span>
+                        <span class="px-3 py-1 bg-yellow-500/80 rounded-full text-xs text-white">Precisão</span>
+                        <span class="px-3 py-1 bg-blue-500/80 rounded-full text-xs text-white">Automação</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div id="modal3" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
+        <div class="bg-white rounded-lg max-w-4xl w-full mx-4 max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-start mb-4">
+                    <h2 class="text-2xl font-bold">Sistema de Embalagem</h2>
+                    <button onclick="closeModal('modal3')" class="text-gray-500 hover:text-gray-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <img src="img/projeto 3.jpg" alt="Projeto 3" class="w-full h-64 object-cover rounded-lg mb-6">
+                <div class="space-y-4">
+                    <p class="text-gray-600">Implementação de uma linha automatizada de embalagem com robótica industrial, incluindo:</p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Integração de robôs colaborativos</li>
+                        <li>Sistema de visão computacional para controle de qualidade</li>
+                        <li>Automação do processo de embalagem</li>
+                        <li>Monitoramento em tempo real da produção</li>
+                    </ul>
+                    <div class="flex gap-2 mt-4">
+                        <span class="px-3 py-1 bg-red-500/80 rounded-full text-xs text-white">Robótica</span>
+                        <span class="px-3 py-1 bg-blue-500/80 rounded-full text-xs text-white">Automação</span>
+                        <span class="px-3 py-1 bg-green-500/80 rounded-full text-xs text-white">Embalagem</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div id="modal4" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
+        <div class="bg-white rounded-lg max-w-4xl w-full mx-4 max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-start mb-4">
+                    <h2 class="text-2xl font-bold">Máquina de Corte CNC</h2>
+                    <button onclick="closeModal('modal4')" class="text-gray-500 hover:text-gray-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <img src="img/projeto4.jpg" alt="Projeto 4" class="w-full h-64 object-cover rounded-lg mb-6">
+                <div class="space-y-4">
+                    <p class="text-gray-600">Desenvolvimento de um sistema CNC personalizado para corte preciso de metais, incluindo:</p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Controle numérico computadorizado avançado</li>
+                        <li>Sistema de refrigeração integrado</li>
+                        <li>Software de programação intuitivo</li>
+                        <li>Monitoramento de precisão em tempo real</li>
+                    </ul>
+                    <div class="flex gap-2 mt-4">
+                        <span class="px-3 py-1 bg-gray-500/80 rounded-full text-xs text-white">CNC</span>
+                        <span class="px-3 py-1 bg-orange-500/80 rounded-full text-xs text-white">Metalurgia</span>
+                        <span class="px-3 py-1 bg-blue-500/80 rounded-full text-xs text-white">Precisão</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
